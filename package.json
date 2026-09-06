@@ -1,0 +1,15 @@
+{
+  "name": "eonx-codebase-knowledge",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:api": "pnpm --filter @eonx/api dev",
+    "dev:dashboard": "pnpm --filter @eonx/dashboard dev",
+    "dev:mcp": "pnpm --filter @eonx/mcp-server dev",
+    "build": "pnpm -r build",
+    "ingest": "pnpm --filter @eonx/ingestion start",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "db:init": "pnpm --filter @eonx/api db:init"
+  }
+}
